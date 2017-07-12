@@ -2,8 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose } from 'redux';
+import { Provider } from 'react-redux'; import { createStore, applyMiddleware, compose } from 'redux';
 import WebFont from 'webfontloader';
 import reducer from './reducers';
 import App from './components/App.jsx';
@@ -36,6 +35,7 @@ const store = createStore(
   reducer,
   {
     filters: {},
+    filterToggle: true,
   },
   enhancer,
 );

@@ -3,6 +3,8 @@ const handleActions = (state = [], action) => {
   switch (action.type) {
     case 'CHANGE_FILTER':
       return { ...state, filters: newFilter };
+    case 'TOGGLE_FILTERS':
+      return { ...state, filterToggle: !state.filterToggle };
     default:
       return state;
   }
