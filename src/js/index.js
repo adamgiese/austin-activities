@@ -35,7 +35,7 @@ const store = createStore(
   reducer,
   {
     filters: {},
-    filterToggle: true,
+    filterToggle: false,
   },
   enhancer,
 );
